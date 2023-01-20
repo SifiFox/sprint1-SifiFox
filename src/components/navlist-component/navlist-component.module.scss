@@ -1,0 +1,131 @@
+.root {
+  height: 3.8rem;
+}
+
+.navListWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navListSearch {
+  display: flex;
+  align-items: center;
+  width: 35rem;
+  cursor: pointer;
+  box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18),
+    0px 1px 5px rgba(191, 196, 201, 0.24);
+  border-radius: 60rem;
+  height: 3.8rem;
+  padding: 0.8rem 1.6rem;
+  @media (max-width: 768px) {
+    width: 27.4rem;
+  }
+}
+
+.navListSort {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  height: 3.8rem;
+  padding: 0.8rem 1.6rem;
+  cursor: pointer;
+
+  background: #ffffff;
+  box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18),
+    0px 1px 5px rgba(191, 196, 201, 0.24);
+  border-radius: 60rem;
+}
+
+.navListSearchTitle {
+  color: #a7a7a7;
+}
+
+.navListGrid {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.navListTypeIconLine,
+.navListTypeIconSquare {
+  width: 1.425rem;
+  height: 1.425rem;
+
+  path {
+    fill: #a7a7a7;
+  }
+}
+
+.navListTypeIconLine {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.navListType {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.8rem;
+  height: 3.8rem;
+  border-radius: 50%;
+  border: none;
+  background: #ffffff;
+  filter: drop-shadow(0px 2px 4px rgba(191, 196, 201, 0.2)) drop-shadow(0px 3px 4px rgba(191, 196, 201, 0.18))
+    drop-shadow(0px 1px 5px rgba(191, 196, 201, 0.24));
+
+  &:hover {
+    filter: drop-shadow(0px 2px 5px rgba(54, 54, 54, 0.1));
+  }
+
+  &:focus {
+    filter: drop-shadow(0px 3px 4px rgba(222, 125, 11, 0.2)) drop-shadow(0px 1px 10px rgba(249, 89, 8, 0.2));
+    svg {
+      path {
+        fill: #a7a7a7;
+      }
+    }
+  }
+
+  &:active {
+    filter: drop-shadow(0px 2px 4px rgba(191, 196, 201, 0.2)) drop-shadow(0px 3px 4px rgba(191, 196, 201, 0.18))
+      drop-shadow(0px 1px 5px rgba(191, 196, 201, 0.24));
+    background: linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%);
+    svg {
+      path {
+        fill: #ffffff;
+      }
+    }
+  }
+}
+
+.navListSortIcon {
+  width: 1.6rem;
+  height: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+
+.navListLeft {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.navListSearchInputWrapper {
+  width: 19rem;
+}
+
+.navListSearchInput {
+  outline: none;
+  border: none;
+  width: 100%;
+}
+
+.navListSearchIcon {
+  width: 1.6rem;
+  height: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.8rem;
+}

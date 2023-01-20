@@ -1,0 +1,14 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.navListWrapper {
+  margin-bottom: 3.2rem;
+}
+.booksListWrapper {
+  display: flex;
+  gap: 2.15rem;
+  flex-wrap: wrap;
+}
