@@ -22,6 +22,19 @@
     width: 27.4rem;
   }
 }
+@media (max-width: 670px) {
+  .navListSearch {
+    width: 3.8rem;
+    padding: 0;
+    justify-content: center;
+  }
+}
+@media (max-width: 320px) {
+  .navListSearch {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+}
 
 .navListSort {
   display: flex;
@@ -34,9 +47,27 @@
   box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18), 0px 1px 5px rgba(191, 196, 201, 0.24);
   border-radius: 60rem;
 }
+@media (max-width: 670px) {
+  .navListSort {
+    padding: 0;
+    width: 3.8rem;
+    justify-content: center;
+  }
+}
+@media (max-width: 320px) {
+  .navListSort {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+}
 
 .navListSearchTitle {
   color: #a7a7a7;
+}
+@media (max-width: 670px) {
+  .navListSearchTitle {
+    display: none;
+  }
 }
 
 .navListGrid {
@@ -46,8 +77,10 @@
 
 .navListTypeIconLine,
 .navListTypeIconSquare {
+  position: relative;
   width: 1.425rem;
   height: 1.425rem;
+  z-index: -1;
 }
 .navListTypeIconLine path,
 .navListTypeIconSquare path {
@@ -69,7 +102,15 @@
   border-radius: 50%;
   border: none;
   background: #ffffff;
+  position: relative;
+  z-index: 1;
   filter: drop-shadow(0px 2px 4px rgba(191, 196, 201, 0.2)) drop-shadow(0px 3px 4px rgba(191, 196, 201, 0.18)) drop-shadow(0px 1px 5px rgba(191, 196, 201, 0.24));
+}
+@media (max-width: 320px) {
+  .navListType {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
 }
 .navListType:hover {
   filter: drop-shadow(0px 2px 5px rgba(54, 54, 54, 0.1));
@@ -88,12 +129,57 @@
   fill: #ffffff;
 }
 
+.navListActiveType {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.8rem;
+  height: 3.8rem;
+  border-radius: 50%;
+  border: none;
+  background: #ffffff;
+  filter: drop-shadow(0px 2px 4px rgba(191, 196, 201, 0.2)) drop-shadow(0px 3px 4px rgba(191, 196, 201, 0.18)) drop-shadow(0px 1px 5px rgba(191, 196, 201, 0.24));
+  filter: drop-shadow(0px 2px 4px rgba(191, 196, 201, 0.2)) drop-shadow(0px 3px 4px rgba(191, 196, 201, 0.18)) drop-shadow(0px 1px 5px rgba(191, 196, 201, 0.24));
+  background: linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%);
+}
+@media (max-width: 320px) {
+  .navListActiveType {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+}
+.navListActiveType:hover {
+  filter: drop-shadow(0px 2px 5px rgba(54, 54, 54, 0.1));
+}
+.navListActiveType:focus {
+  filter: drop-shadow(0px 3px 4px rgba(222, 125, 11, 0.2)) drop-shadow(0px 1px 10px rgba(249, 89, 8, 0.2));
+}
+.navListActiveType:focus svg path {
+  fill: #ffffff;
+}
+.navListActiveType:active {
+  filter: drop-shadow(0px 2px 4px rgba(191, 196, 201, 0.2)) drop-shadow(0px 3px 4px rgba(191, 196, 201, 0.18)) drop-shadow(0px 1px 5px rgba(191, 196, 201, 0.24));
+  background: linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%);
+}
+.navListActiveType:active svg path {
+  fill: #ffffff;
+}
+.navListActiveType svg path {
+  fill: #ffffff;
+}
+
 .navListSortIcon {
   width: 1.6rem;
   height: 1.6rem;
   display: flex;
   align-items: center;
   justify-self: center;
+}
+@media (max-width: 670px) {
+  .navListSortIcon img {
+    width: 100%;
+  }
 }
 
 .navListLeft {
@@ -103,6 +189,11 @@
 
 .navListSearchInputWrapper {
   width: 19rem;
+}
+@media (max-width: 670px) {
+  .navListSearchInputWrapper {
+    display: none;
+  }
 }
 
 .navListSearchInput {
@@ -118,4 +209,9 @@
   align-items: center;
   justify-content: center;
   margin-right: 0.8rem;
+}
+@media (max-width: 670px) {
+  .navListSearchIcon {
+    margin-right: 0;
+  }
 }/*# sourceMappingURL=navlist-component.module.css.map */

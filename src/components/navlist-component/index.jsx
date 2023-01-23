@@ -8,7 +8,11 @@ import iconSort from '../../assets/icons/iconSort.svg';
 import iconSquare from '../../assets/icons/icon-square-four.svg';
 import iconLine from '../../assets/icons/icon-line.svg';
 
-export function NavList() {
+export function NavList({ listType, onClickListType }) {
+  const setActiveBtn = (type) => {
+    onClickListType(type);
+  };
+
   return (
     <div className={styles.root}>
       <div className={styles.navListWrapper}>
@@ -30,7 +34,11 @@ export function NavList() {
         </div>
         <div className='navListRight'>
           <div className={styles.navListGrid}>
-            <button type='button' className={styles.navListType}>
+            <button
+              type='button'
+              onClick={(e) => setActiveBtn('square')}
+              className={listType === 'square' ? styles.navListActiveType : styles.navListType}
+            >
               <svg
                 viewBox='0 0 16 16'
                 className={styles.navListTypeIconSquare}
@@ -45,7 +53,11 @@ export function NavList() {
                 />
               </svg>
             </button>
-            <button type='button' className={styles.navListType}>
+            <button
+              type='button'
+              onClick={(e) => setActiveBtn('line')}
+              className={listType !== 'square' ? styles.navListActiveType : styles.navListType}
+            >
               <svg
                 className={styles.navListTypeIconLine}
                 viewBox='0 0 20 20'

@@ -4,7 +4,7 @@ import styles from './menu-component.module.scss';
 
 export function Menu() {
   return (
-    <asside className={styles.menuWrapper}>
+    <div className={styles.menuWrapper}>
       <div className={styles.menuTabs}>
         <div className={styles.menuActiveTab}>
           <div className={styles.menuActiveTabTitle}>Витрина книг</div>
@@ -100,6 +100,6 @@ export function Menu() {
           <div className='menuTabTitle'>Договор оферты</div>
         </div>
       </div>
-    </asside>
+    </div>
   );
 }

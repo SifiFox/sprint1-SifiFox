@@ -99,7 +99,7 @@ html {
   flex: 1 0 auto;
   display: flex;
   gap: 0.6rem;
-  margin-bottom: 6.2rem;
+  margin-bottom: 6rem;
 }
 
 @media (max-width: 768px) {

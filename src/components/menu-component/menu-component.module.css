@@ -60,7 +60,7 @@
   max-width: 27.9rem;
   min-width: 27.9rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .menuWrapper {
     display: none;
   }
