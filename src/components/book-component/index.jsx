@@ -23,14 +23,20 @@ export function BookCard({ author, year, title, bookedTill, isBooked, rating, li
         <img className={styles.bookImage} src={bookImage} alt='' />
       </div>
 
-      {rating <= 0 ? <div className={styles.bookRating}>ещё нет оценок</div> : <Rating rating={rating} />}
+      <div className={styles.bookContent}>
+        {rating <= 0 ? (
+          <div className={styles.bookRating}>ещё нет оценок</div>
+        ) : (
+          <Rating rating={rating} listType={listType} />
+        )}
 
-      <div className={styles.bookTitle}>{slicedTitle}</div>
+        <div className={styles.bookTitle}>{slicedTitle}</div>
 
-      <div className={styles.bookAuthor}>
-        {author}, {year}
+        <div className={styles.bookAuthor}>
+          {author}, {year}
+        </div>
+        {isBooked ? <DisabledBtn month={month} day={day} /> : <BookBtn />}
       </div>
-      {isBooked ? <DisabledBtn month={month} day={day} /> : <BookBtn />}
     </div>
   );
 }

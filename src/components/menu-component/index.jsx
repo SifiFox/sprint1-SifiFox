@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import styles from './menu-component.module.scss';
 
@@ -94,10 +95,14 @@ export function Menu() {
           </div>
         </div>
         <div className={styles.menuTab}>
-          <div className='menuTabTitle'>Правила пользования</div>
+          <Link to='/terms'>
+            <div className='menuTabTitle'>Правила пользования</div>
+          </Link>
         </div>
         <div className={styles.menuTab}>
-          <div className='menuTabTitle'>Договор оферты</div>
+          <Link to='/contract'>
+            <div className='menuTabTitle'>Договор оферты</div>
+          </Link>
         </div>
       </div>
     </div>

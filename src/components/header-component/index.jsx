@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import styles from './header-component.module.scss';
 
@@ -12,9 +13,11 @@ export function Header() {
         <div className={styles.headerBurgerWrapper}>
           <div className={styles.headerBurger}> </div>
         </div>
-        <div className={styles.logo}>
-          <img src={logo} alt='' />
-        </div>
+        <Link to='/'>
+          <div className={styles.logo}>
+            <img src={logo} alt='' />
+          </div>
+        </Link>
         <div className='title h3'>Библиотека</div>
       </div>
       <div className='headerRightSide'>

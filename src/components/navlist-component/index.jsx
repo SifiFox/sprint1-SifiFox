@@ -11,6 +11,8 @@ import iconLine from '../../assets/icons/icon-line.svg';
 export function NavList({ listType, onClickListType }) {
   const setActiveBtn = (type) => {
     onClickListType(type);
+
+    console.log(type);
   };
 
   return (

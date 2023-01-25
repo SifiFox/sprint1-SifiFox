@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import styles from './bookslist-component.module.scss';
 
@@ -11,16 +12,18 @@ export function BooksList({ listType }) {
   return (
     <>
       {books.map((book) => (
-        <BookCard
-          key={book.id}
-          author={book.author}
-          year={book.year}
-          title={book.title}
-          bookedTill={book.bookedTill}
-          isBooked={book.isBooked}
-          rating={book.rating}
-          listType={listType}
-        />
+        <Link to='/book'>
+          <BookCard
+            key={book.id}
+            author={book.author}
+            year={book.year}
+            title={book.title}
+            bookedTill={book.bookedTill}
+            isBooked={book.isBooked}
+            rating={book.rating}
+            listType={listType}
+          />
+        </Link>
       ))}
     </>
   );

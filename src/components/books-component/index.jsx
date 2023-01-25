@@ -16,7 +16,7 @@ export function Books() {
       <div className={styles.navListWrapper}>
         <NavList listType={listType} onClickListType={onClickListType} />
       </div>
-      <div className={styles.booksListWrapperSquare}>
+      <div className={listType === 'square' ? styles.booksListWrapperSquare : styles.booksListWrapperLine}>
         <BooksList listType={listType} />
       </div>
     </div>
