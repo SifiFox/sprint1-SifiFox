@@ -18,7 +18,7 @@ export function BookCard({ author, year, title, bookedTill, isBooked, rating, li
   }
 
   return (
-    <div className={listType === 'square' ? styles.bookSquare : styles.bookLine}>
+    <div data-test-id='card' className={listType === 'square' ? styles.bookSquare : styles.bookLine}>
       <div className={styles.bookImageWrapper}>
         <img className={styles.bookImage} src={bookImage} alt='' />
       </div>

@@ -1,0 +1,50 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.reviewHeader {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+.reviewAuthorAvatar {
+  width: 3.2rem;
+  height: 3.2rem;
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+.reviewAuthorName {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.01rem;
+
+  color: #727272;
+}
+
+.reviewDate {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.01rem;
+
+  color: #727272;
+}
+
+.reviewDescription {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.01rem;
+  color: #363636;
+}

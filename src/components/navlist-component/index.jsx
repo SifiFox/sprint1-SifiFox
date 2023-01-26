@@ -37,6 +37,7 @@ export function NavList({ listType, onClickListType }) {
         <div className='navListRight'>
           <div className={styles.navListGrid}>
             <button
+              data-test-id='button-menu-view-window'
               type='button'
               onClick={(e) => setActiveBtn('square')}
               className={listType === 'square' ? styles.navListActiveType : styles.navListType}
@@ -56,6 +57,7 @@ export function NavList({ listType, onClickListType }) {
               </svg>
             </button>
             <button
+              data-test-id='button-menu-view-list'
               type='button'
               onClick={(e) => setActiveBtn('line')}
               className={listType !== 'square' ? styles.navListActiveType : styles.navListType}

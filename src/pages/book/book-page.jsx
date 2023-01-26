@@ -1,17 +1,17 @@
 import { Header } from '../../components/header-component';
-import { Footer } from '../../components/footer-component';
-import { Menu } from '../../components/menu-component';
-import { Books } from '../../components/books-component';
 import { Breadcrumbs } from '../../components/breadcrumbs-component';
+import { Footer } from '../../components/footer-component';
+import { BookDetailsInfo } from '../../components/book-details/book-details-info';
+import { BookDetailsReviews } from '../../components/book-details/book-details-reviews';
 
 export const BookPage = () => (
   <div className='wrapper'>
     <Header />
-
     <Breadcrumbs />
-
-    <div className='content'>test</div>
-
+    <div className='book-details__content'>
+      <BookDetailsInfo />
+      <BookDetailsReviews />
+    </div>
     <Footer />
   </div>
 );
