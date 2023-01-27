@@ -5,7 +5,7 @@ import { ReviewsList } from '../../book-reviews-list';
 
 import { PrimaryBtn } from '../../btns-components/primary-btn';
 
-export function BookDetailsReviews() {
+export function BookDetailsReviews({ rating }) {
   const btnTitle = 'оценить книгу';
   const btnSize = 'full';
 
@@ -14,8 +14,8 @@ export function BookDetailsReviews() {
       <div className={styles.reviewsSection}>
         <div className={styles.reviewsSectionTitle}>Рейтинг</div>
         <div className={styles.rating}>
-          <DetailsRating rating={4} />
-          <span className={styles.ratingValue}>4.3</span>
+          <DetailsRating rating={rating} type='book' />
+          <span className={styles.ratingValue}>{rating}</span>
         </div>
       </div>
       <div className={styles.reviewsSection}>

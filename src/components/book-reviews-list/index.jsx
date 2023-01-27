@@ -6,10 +6,9 @@ import styles from './books-reviews-list.module.scss';
 
 import data from '../../assets/reviews.json';
 
-export function ReviewsList({ reviewsCount }) {
-  const [reviews, setReviews] = React.useState(data);
+export function ReviewsList() {
+  const [reviews] = React.useState(data);
 
-  console.log(data);
   return (
     <div className={styles.root}>
       {reviews.map((review) => (

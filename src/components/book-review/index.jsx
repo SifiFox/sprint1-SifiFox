@@ -1,8 +1,6 @@
 import { DetailsRating } from '../book-details/book-details-rating';
 import styles from './book-review.module.scss';
 
-import avatar from '../../assets/images/reviewAvatar.jpg';
-
 export function BookReview({ image, author, rating, date, description }) {
   return (
     <div className={styles.root}>
@@ -14,7 +12,7 @@ export function BookReview({ image, author, rating, date, description }) {
         <div className={styles.reviewDate}>{date}</div>
       </div>
       <div className={styles.reviewRating}>
-        <DetailsRating rating={rating} />
+        <DetailsRating rating={rating} type='review' />
       </div>
       {description ? <div className={styles.reviewDescription}>{description}</div> : ''}
     </div>

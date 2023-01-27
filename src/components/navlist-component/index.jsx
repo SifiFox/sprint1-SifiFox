@@ -5,14 +5,9 @@ import styles from './navlist-component.module.scss';
 import iconSearch from '../../assets/icons/iconSearch.svg';
 import iconSort from '../../assets/icons/iconSort.svg';
 
-import iconSquare from '../../assets/icons/icon-square-four.svg';
-import iconLine from '../../assets/icons/icon-line.svg';
-
 export function NavList({ listType, onClickListType }) {
   const setActiveBtn = (type) => {
     onClickListType(type);
-
-    console.log(type);
   };
 
   return (
@@ -39,7 +34,7 @@ export function NavList({ listType, onClickListType }) {
             <button
               data-test-id='button-menu-view-window'
               type='button'
-              onClick={(e) => setActiveBtn('square')}
+              onClick={() => setActiveBtn('square')}
               className={listType === 'square' ? styles.navListActiveType : styles.navListType}
             >
               <svg
@@ -59,7 +54,7 @@ export function NavList({ listType, onClickListType }) {
             <button
               data-test-id='button-menu-view-list'
               type='button'
-              onClick={(e) => setActiveBtn('line')}
+              onClick={() => setActiveBtn('line')}
               className={listType !== 'square' ? styles.navListActiveType : styles.navListType}
             >
               <svg

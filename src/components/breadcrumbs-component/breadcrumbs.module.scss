@@ -50,10 +50,21 @@
         position: relative;
 
         @media (max-width: 768px) {
+          font-size: 1.4rem;
+          line-height: 1.8rem;
+        }
+
+        @media (max-width: 506px) {
+          font-size: 1.2rem;
+          line-height: 1.6rem;
+          letter-spacing: 0.02rem;
+        }
+      }
+      .breadcrumb:last-child {
+        @media (max-width: 768px) {
           font-size: 1.6rem;
           line-height: 2.4rem;
         }
-
         @media (max-width: 506px) {
           font-size: 1.2rem;
           line-height: 1.6rem;

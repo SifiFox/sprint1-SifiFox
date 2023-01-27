@@ -1,23 +1,24 @@
+import { useParams } from 'react-router-dom';
+
 import styles from './book-details-info.module.scss';
 
-import mainImage from '../../../assets/images/book1.png';
+import imageEmpty from '../../../assets/images/bookImageEmpty.jpg';
 import { PrimaryBtn } from '../../btns-components/primary-btn';
 
-export function BookDetailsInfo() {
+export function BookDetailsInfo({ image, title, author, year }) {
   const btnTitle = 'Забронировать';
-
   const btnSize = 'root';
 
   return (
     <div className={styles.root}>
       <div className={styles.mainImage}>
-        <img src={mainImage} alt='' />
+        <img src={image ? image : imageEmpty} alt='' />
       </div>
       <div className={styles.mainInfo}>
-        <div className={styles.title}>
-          Грокаем алгоритмы. Иллюстрированное пособие для программистов &shy; и любопытствующих
+        <div className={styles.title}>{title}</div>
+        <div className={styles.author}>
+          {author}, {year}
         </div>
-        <div className={styles.author}>Адитья Бхаргава, 2019</div>
 
         <PrimaryBtn size={btnSize} title={btnTitle} />
 

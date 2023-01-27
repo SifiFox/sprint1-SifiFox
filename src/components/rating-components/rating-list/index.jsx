@@ -11,7 +11,7 @@ export function Rating({ rating, listType }) {
   // i <= rating ? starsArr.push(<StarFilled />) :starsArr.push(<StarEmpty />)
 
   for (let i = 0; i < 5; i++) {
-    if (i <= rating) {
+    if (i < rating) {
       starsArr.push(<StarFilled key={i} listType={listType} />);
     } else {
       starsArr.push(<StarEmpty key={i} listType={listType} />);

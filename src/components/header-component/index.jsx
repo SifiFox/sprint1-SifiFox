@@ -13,7 +13,7 @@ export function Header() {
         <div className={styles.headerBurgerWrapper}>
           <div className={styles.headerBurger}> </div>
         </div>
-        <Link to='/'>
+        <Link to='/books/all'>
           <div className={styles.logo}>
             <img src={logo} alt='' />
           </div>

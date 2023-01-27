@@ -121,6 +121,12 @@ html {
   }
 }
 
+@media (max-width: 660px) {
+  .book-details__content {
+    margin-bottom: 2rem;
+  }
+}
+
 @media (max-width: 550px) {
   .h3 {
     font-size: 1.8rem;

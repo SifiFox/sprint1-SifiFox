@@ -22,28 +22,18 @@
   letter-spacing: 0.01rem;
 
   .menuActiveTabTitle {
+    display: inline-block;
+    width: 100%;
     background: linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
+    // text-fill-color: transparent;
     padding-bottom: 0.8rem;
     border-bottom: 0.1rem solid #f83600;
-    margin-bottom: 1.6rem;
+    // margin-bottom: 1.6rem;
     max-width: 25.5rem;
-  }
-
-  .menuTabRowActive {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.8rem;
-    line-height: 2.8rem;
-    letter-spacing: 0.01rem;
-    background: linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+    position: relative;
   }
 }
 .menuTabRow {
@@ -67,28 +57,8 @@
 }
 
 .menuTabTitle {
+  position: relative;
   box-sizing: content-box;
   height: 2.8rem;
   max-width: 25.5rem;
-}
-
-.menuTabInner {
-  padding-left: 2rem;
-  ul {
-    display: flex;
-    flex-direction: column;
-    gap: 1.6rem;
-  }
-}
-
-.menuTabRowTitle {
-  white-space: wrap;
-  float: left;
-}
-.menuTabRow {
-  .menuTabRowCount {
-    color: #a7a7a7;
-    padding-left: 0.2rem;
-    font-size: 1.4rem;
-  }
 }
